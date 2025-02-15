@@ -17,8 +17,8 @@ def nmea_publisher():
         nmea_sentence = Sentence()
         nmea_sentence.header.stamp = rospy.Time.now()
         nmea_sentence.header.frame_id = ""
-        # nmea_sentence.sentence = "$GPGGA,085723.919,3554.842,N,12848.203,E,1,12,1.0,0.0,M,0.0,M,,*6B\r\n" # 대가대
-        nmea_sentence.sentence = "$GPGGA,065201.798,3717.326,N,12706.431,E,1,12,1.0,0.0,M,0.0,M,,*69\r\n" # 용인운전면허시험장
+        nmea_sentence.sentence = "$GPGGA,085723.919,3554.842,N,12848.203,E,1,12,1.0,0.0,M,0.0,M,,*6B\r\n" # 대가대
+        # nmea_sentence.sentence = "$GPGGA,065201.798,3717.326,N,12706.431,E,1,12,1.0,0.0,M,0.0,M,,*69\r\n" # 용인운전면허시험장
         # nmea_sentence.sentence = "$GPGGA,121305.984,3314.565,N,12625.487,E,1,12,1.0,0.0,M,0.0,M,,*65\r\n" # 제주도
         
         # 문장 발행
